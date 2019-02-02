@@ -14,6 +14,7 @@
                         </div>
                     @endif
 
+                    {{ $hello }}
 
                 </div>
             </div>
