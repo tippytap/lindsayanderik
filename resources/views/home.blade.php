@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    {{ $hello }}
+                    <ul>
+                    @foreach($weddings as $wedding)
+                        <li>{{$wedding->name}}</li>
+                    @endforeach
+                    </ul>
 
                 </div>
             </div>

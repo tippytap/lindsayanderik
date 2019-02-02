@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+use App\Wedding;
 
 class HomeController extends Controller
 {
@@ -23,9 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $hello = "Boopy doopy!";
+        $weddings = Wedding::where('owner', Auth::id())->get();
         return view('home', [
-            'hello' => $hello
+            'weddings' => $weddings
         ]);
     }
 }
