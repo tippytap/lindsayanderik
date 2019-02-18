@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/wedding/{id}', 'WeddingController@show')->name('weddingShow');
+
+Route::get('/invite/{wedding}', 'InviteeController@invite');
+Route::post('/create/{wedding}', 'Inviteecontroller@create')->name('createInvite');
