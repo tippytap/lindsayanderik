@@ -1,0 +1,89 @@
+
+/**
+*   Grid
+*   --------------------- column options
+*   thirds = 3 columns
+*   halves = 2 columns
+*   fourths = 4 columns
+*
+*   --------------------- misc options 
+*   gutters = turn gutters on
+*/
+.grid{
+    display: flex;
+    // padding: 5%;
+    @media screen and (max-width: 767px){
+        display: block;
+    }
+    &.gutters{
+        // align-content: flex-start;
+        .col{
+            &:first-child{
+                margin-left: 0;
+            }
+            margin-left: 1em;
+            @media screen and (max-width: 767px){
+                margin-left: 0;
+            }
+        }
+        @media screen and (max-width: 767px){
+            justify-content: space-between;
+        }
+
+
+    }
+    .col{
+        @media screen and (max-width: 767px){
+            display: block;
+            width: 100%!important;
+        }
+        // @media screen and (min-width: 768px) and (max-width: 992px){
+        //     width: 50%!important;
+        // }
+
+        &.two-thirds{
+            width:  66%;
+        }
+    }
+    &.center{
+        justify-content: center;
+    }
+    &.space-around{
+        justify-content: space-around;
+    }
+    &.flex-end{
+        justify-content: flex-end;
+    }
+    &.thirds{
+        .col:first-child, .col:nth-child(3n+4){
+            margin-left: 0;
+        }
+        > .col{
+            width: 32%;
+        }
+    }
+    &.halves{
+        justify-content: space-around;
+        .col:first-child{
+            margin-left: 0;
+        }
+        // > .col{
+        //     width: 45%;
+        // }
+    }
+    &.fourths{
+        > .col{
+            width: 25%;
+        }
+    }
+
+    &.align{
+        &.bottom{
+            align-items: flex-end;
+        }
+    }
+
+    &.wrap{
+        flex-wrap: wrap;
+    }
+}
