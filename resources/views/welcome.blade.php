@@ -23,7 +23,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">RSVP</a>
+                        <a href="#rsvp">RSVP</a>
                     </li>
                     <li>
                         <a href="#">Travel</a>
@@ -49,7 +49,7 @@
             </div>
 
 
-            <div class="content">
+            <div id="rsvp" class="content">
                 <div class="card-container w-50">
                     <div class="card w-100 layer-up">
                         <div class="card-content">
