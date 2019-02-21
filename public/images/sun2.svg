@@ -3,8 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 260 193" style="enable-background:new 0 0 260 193;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+	.st0{opacity:0.5;fill:#FFFFFF;enable-background:new    ;}
 </style>
 <title>sun2</title>
-<circle class="st0" cx="130" cy="96.5" r="95"/>
+<path class="st0" d="M16.5,193C-18.5,130.3,4,51.1,66.7,16.1S208.5,3.6,243.5,66.3c21.6,38.7,22,85.8,1,124.9L16.5,193z"/>
 </svg>

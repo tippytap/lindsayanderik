@@ -8881,6 +8881,15 @@ nav ul li a:hover {
   margin-top: 10vh;
 }
 
+@media screen and (max-width: 767px) {
+  .sun {
+    background: url("../images/sun2.svg") no-repeat center;
+    opacity: 0.5;
+    width: 95%;
+    height: 42vh;
+  }
+}
+
 .headline {
   margin-top: 10%;
   top: 15%;

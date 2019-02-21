@@ -151,9 +151,6 @@ nav ul{
 }
 
 $sun-width: 80vh;
-@media screen and (max-width: 768px){
-    $sun-width: 55vh;
-}
 .sun-wrapper{
     position: absolute;
     top: 0;
@@ -177,6 +174,12 @@ $sun-width: 80vh;
     // margin-top: 5%;
     margin-top: 10vh;
     // background-blend-mode: overlay;
+    @media screen and (max-width: 767px){
+        background: url('../images/sun2.svg') no-repeat center;
+        opacity: 0.5;
+        width: 95%;
+        height: 42vh;
+    }
 }
 
 .headline{
