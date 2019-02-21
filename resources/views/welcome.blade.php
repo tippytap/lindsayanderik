@@ -49,7 +49,7 @@
             </div>
 
 
-            <div id="rsvp" class="content hidden">
+            <div id="rsvp" class="content ">
                 <div class="card-container w-50">
                     <div class="card w-100 layer-up">
                         <div class="card-content">

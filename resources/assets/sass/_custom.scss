@@ -138,12 +138,26 @@ nav ul{
 .mtn{
     position: absolute;
     // opacity: 0.7;
-    top: 45%;
+    top: 50%;
     left: 0;
     max-width: 100%;
     width: 100%;
     z-index: 1;
     min-height: 1000px;
+    background: $navy;
+    @media screen and (min-width: 768px){
+        top: 75%;
+    }
+    img{
+        position: absolute;
+        top: -2.5em;
+        @media screen and (min-width: 768px){
+            top: -10em;
+        }
+        @media screen and (min-width: 1900px){
+            top: -15em;
+        }
+    }
 }
 
 .fixed{
@@ -196,7 +210,7 @@ $sun-width: 80vh;
     font-family: "Rubik", sans-serif;
 
     @media screen and (min-width: 768px){
-        top: 1em;
+        top: 3em;
         margin-left: -1em;
     }
 

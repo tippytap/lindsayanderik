@@ -8844,12 +8844,36 @@ nav ul li a:hover {
 
 .mtn {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 0;
   max-width: 100%;
   width: 100%;
   z-index: 1;
   min-height: 1000px;
+  background: #143b4c;
+}
+
+@media screen and (min-width: 768px) {
+  .mtn {
+    top: 75%;
+  }
+}
+
+.mtn img {
+  position: absolute;
+  top: -2.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .mtn img {
+    top: -10em;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .mtn img {
+    top: -15em;
+  }
 }
 
 .fixed {
@@ -8916,7 +8940,7 @@ nav ul li a:hover {
 
 @media screen and (min-width: 768px) {
   .headline {
-    top: 1em;
+    top: 3em;
     margin-left: -1em;
   }
 }
