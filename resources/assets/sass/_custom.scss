@@ -24,6 +24,7 @@ nav ul{
     margin: 1em;
     justify-content: center;
     align-items: center;
+    padding: 0;
     li{
         list-style: none;
         margin: 0 0.5em;
@@ -149,7 +150,10 @@ nav ul{
     position: fixed;
 }
 
-$sun-width: 50em;
+$sun-width: 80vh;
+@media screen and (max-width: 768px){
+    $sun-width: 55vh;
+}
 .sun-wrapper{
     position: absolute;
     top: 0;
@@ -162,9 +166,9 @@ $sun-width: 50em;
 }
 .sun{
     // border-radius: 50%;
-    background: url('../images/sun2.svg') no-repeat;
-    opacity: 0.5;
-    width: $sun-width;
+    background: url('../images/sun-full.svg') no-repeat center;
+    opacity: 0.25;
+    width: 100%;
     height: $sun-width;
     // position: absolute;
     // left: 50%;
@@ -177,6 +181,7 @@ $sun-width: 50em;
 
 .headline{
     margin-top: 10%;
+    top: 15%;
     color: #143b4c;
     z-index: 1;
     position: relative;
@@ -187,6 +192,11 @@ $sun-width: 50em;
     align-items: center;
     font-family: "Rubik", sans-serif;
 
+    @media screen and (min-width: 768px){
+        top: 1em;
+        margin-left: -1em;
+    }
+
     %line{
         content: "";
         background: #143b4c; 
@@ -196,13 +206,18 @@ $sun-width: 50em;
     }
     h1{
         font-weight: 300;
-        font-size: 5em;
+        font-size: 2em;
         margin: 0;
         line-height: 1;
         // font-family: "Karla", sans-serif;
         text-transform: uppercase;
         position: relative;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 768px){
+            font-size: 4em;
+        }
+
         &::after{
             @extend %line;
             width: 90%;
@@ -217,11 +232,16 @@ $sun-width: 50em;
         }
     }
     h2{
-        font-size: 2em;
+        font-size: 1em;
         font-weight: 300;
         margin: 0 0 0 5em;
         position: relative;
         text-align: right;
+
+        @media screen and (min-width: 768px){
+            font-size: 2em;
+        }
+
         &::after{
             @extend %line;
             width: 90%;
@@ -247,6 +267,9 @@ $sun-width: 50em;
     top: 1em;
     right: 1em;
     z-index: 2;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
 }
 
 .btn:visited{

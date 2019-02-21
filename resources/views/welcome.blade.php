@@ -32,7 +32,7 @@
                         <a href="#">Registry</a>
                     </li>
                     <li>
-                        <a href="#">Our Story</a>
+                        <a href="#">Story</a>
                     </li>
                 </ul>
             </nav>
@@ -49,7 +49,7 @@
             </div>
 
 
-            <div id="rsvp" class="content">
+            <div id="rsvp" class="content hidden">
                 <div class="card-container w-50">
                     <div class="card w-100 layer-up">
                         <div class="card-content">

@@ -8717,6 +8717,7 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
 }
 
 nav ul li {
@@ -8873,15 +8874,16 @@ nav ul li a:hover {
 }
 
 .sun {
-  background: url("../images/sun2.svg") no-repeat;
-  opacity: 0.5;
-  width: 50em;
-  height: 50em;
+  background: url("../images/sun-full.svg") no-repeat center;
+  opacity: 0.25;
+  width: 100%;
+  height: 80vh;
   margin-top: 10vh;
 }
 
 .headline {
   margin-top: 10%;
+  top: 15%;
   color: #143b4c;
   z-index: 1;
   position: relative;
@@ -8903,6 +8905,13 @@ nav ul li a:hover {
   font-family: "Rubik", sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+  .headline {
+    top: 1em;
+    margin-left: -1em;
+  }
+}
+
 .headline h1::after, .headline h1::before, .headline h2::after {
   content: "";
   background: #143b4c;
@@ -8913,12 +8922,18 @@ nav ul li a:hover {
 
 .headline h1 {
   font-weight: 300;
-  font-size: 5em;
+  font-size: 2em;
   margin: 0;
   line-height: 1;
   text-transform: uppercase;
   position: relative;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .headline h1 {
+    font-size: 4em;
+  }
 }
 
 .headline h1::after {
@@ -8934,11 +8949,17 @@ nav ul li a:hover {
 }
 
 .headline h2 {
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 300;
   margin: 0 0 0 5em;
   position: relative;
   text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .headline h2 {
+    font-size: 2em;
+  }
 }
 
 .headline h2::after {
@@ -8960,6 +8981,12 @@ nav ul li a:hover {
   top: 1em;
   right: 1em;
   z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .top-right.links {
+    display: none;
+  }
 }
 
 .btn:visited {
