@@ -8,6 +8,8 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@import "_button.scss";
+
 @import '_reset';
 @import '_util';
 @import '_grid';

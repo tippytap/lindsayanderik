@@ -1,0 +1,15 @@
+
+.btn{
+    border-radius: 0;
+    letter-spacing: 0.15vw;
+    text-transform: uppercase;
+
+    &.btn-primary{
+        background-color: $navy;
+        border-color: $navy;
+
+        &:hover{
+            background: lighten($navy, 10%);
+        }
+    }
+}

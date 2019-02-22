@@ -7710,6 +7710,21 @@ button.close {
   }
 }
 
+.btn {
+  border-radius: 0;
+  letter-spacing: 0.15vw;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary {
+  background-color: #143b4c;
+  border-color: #143b4c;
+}
+
+.btn.btn-primary:hover {
+  background: #1f5a74;
+}
+
 /*
 Theme Name: lindsay
 Theme URI: http://underscores.me/
@@ -8874,6 +8889,11 @@ nav ul li a:hover {
   right: 0;
 }
 
+.card-container .btn {
+  font-size: 1em;
+  padding: 6px 2em;
+}
+
 .center {
   margin: 0 auto;
 }
@@ -9101,20 +9121,21 @@ nav ul li a:hover {
 }
 
 .headline h1::before {
-  width: 35%;
-  right: 34px;
-  top: -40px;
+  width: 50%;
+  right: 2.35vw;
+  top: -4vh;
 }
 
 .headline h1 div::after {
   width: 90%;
   left: 5%;
+  bottom: -1vh;
 }
 
 .headline h2 {
   font-size: 1em;
   font-weight: 300;
-  margin: 0 0 0 8em;
+  margin: 0 0 0 30vw;
   position: relative;
   text-align: right;
 }
@@ -9128,7 +9149,7 @@ nav ul li a:hover {
 .headline h2::after {
   width: 90%;
   left: -100%;
-  bottom: 20px;
+  bottom: 45%;
 }
 
 .paralaxThis {

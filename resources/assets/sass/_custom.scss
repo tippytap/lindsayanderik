@@ -167,6 +167,11 @@ nav ul{
             // margin-right: 3em;
         }
     }
+
+    .btn{
+        font-size: 1em;
+        padding: 6px 2em;
+    }
 }
 
 .center{
@@ -360,9 +365,12 @@ $sun-width: 80vh;
         }
         &::before{
             @extend %line;
-            width: 35%;
-            right: 34px;
-            top: -40px;
+            // width: 35%;
+            width: 50%;
+            // right: 34px;
+            right: 2.35vw;
+            // top: -40px;
+            top: -4vh;
         }
 
         div{
@@ -370,7 +378,7 @@ $sun-width: 80vh;
                 @extend %line;
                 width: 90%;
                 left: 5%;
-
+                bottom: -1vh;
             }
         }
     }
@@ -378,7 +386,8 @@ $sun-width: 80vh;
         font-size: 1em;
         font-weight: 300;
         // margin: 0 0 0 5em;
-        margin: 0 0 0 8em;
+        // margin: 0 0 0 8em;
+        margin: 0 0 0 30vw;
         position: relative;
         text-align: right;
 
@@ -390,7 +399,8 @@ $sun-width: 80vh;
             @extend %line;
             width: 90%;
             left: -100%;
-            bottom: 20px;
+            // bottom: 20px;
+            bottom: 45%;
         }
     }
 }
