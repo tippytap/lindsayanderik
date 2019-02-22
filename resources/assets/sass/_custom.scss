@@ -74,7 +74,11 @@ nav ul{
     position: relative;
     overflow: hidden;
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: 992px){
+        width: 75%;
+    }
+
+    @media screen and (max-width: 991px){
         top: -10em;
     }
 
@@ -92,7 +96,7 @@ nav ul{
 
 .w-50{
     width: 100%;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 992px){
         width: 50%;
     }
 }
@@ -103,6 +107,41 @@ nav ul{
 
 .w-25{
     width: 25%;
+}
+
+.m{
+    &.top{
+        &.t-1{
+            margin-top: 1em;
+        }
+        &.t-2{
+            margin-top: 2em;
+        }
+        &.t-3{
+            margin-top: 3em;
+        }
+        &.t-4{
+            margin-top: 4em;
+        }
+        &.t-5{
+            margin-top: 5em;
+        }
+        &.t-6{
+            margin-top: 6em;
+        }
+        &.t-7{
+            margin-top: 7em;
+        }
+        &.t-8{
+            margin-top: 8em;
+        }
+        &.t-9{
+            margin-top: 9em;
+        }
+        &.t-10{
+            margin-top: 10em;
+        }
+    }
 }
 
 .card-container{
@@ -116,16 +155,16 @@ nav ul{
     &.left{
         position: absolute;
         left: 0;
-        @media screen and (min-width: 768px){
-            margin-left: 3em;
+        @media screen and (min-width: 992px){
+            // margin-left: 3em;
         }
     }
 
     &.right{
         position: absolute;
         right: 0;
-        @media screen and (min-width: 768px){
-            margin-right: 3em;
+        @media screen and (min-width: 992px){
+            // margin-right: 3em;
         }
     }
 }
@@ -136,6 +175,7 @@ nav ul{
 
 .card{
     padding: 1em;
+    margin: 1em;
     background: white;
     border: 1px solid $navy;
     color: $navy;
@@ -185,13 +225,17 @@ nav ul{
     // top: 50%;
     // top: 55vh;
     top: 80vw;
+    min-height: 300px;
     left: 0;
     max-width: 100%;
     width: 100%;
     z-index: 1;
-    min-height: 300px;
     background: $navy;
     @media screen and (min-width: 768px){
+        top: 55vh;
+        min-height: 1000px;
+    }
+    @media screen and (min-width: 992px){
         top: 70vh;
     }
     img{
@@ -235,10 +279,14 @@ $sun-width: 80vh;
     // margin-top: 5%;
     // margin-top: 10vh;
     // margin-top: 5vh;
-    margin-top: 5vw;
+    margin-top: 3vw;
     // background-blend-mode: overlay;
-    @media screen and (min-width: 2000px){
-        width: 40%;
+    // @media screen and (min-width: 2000px){
+    //     width: 40%;
+    // }
+    @media screen and (min-width: 768px) and (max-width: 992px){
+        width: 80%;
+        margin-top: -2em;
     }
     @media screen and (min-width: 992px) and (max-width: 1600px){
         width: 60%;
@@ -248,13 +296,14 @@ $sun-width: 80vh;
         opacity: 0.5;
         width: 95%;
         height: 42vh;
-        margin-top: 10%;
+        // margin-top: 10%;
     }
 }
 
 .headline{
     // margin-top: 10%;
-    margin-top: 10vh;
+    // margin-top: 10vh;
+    margin-top: 5vw;
     top: 15%;
     color: #143b4c;
     z-index: 1;
@@ -268,8 +317,12 @@ $sun-width: 80vh;
     font-style: italic;
 
     @media screen and (min-width: 768px){
-        // top: 3em;
         margin-left: -1em;
+        margin-top: 8vw;
+    }
+
+    @media screen and (min-width: 1800px){
+        margin-top: 5vw;
     }
 
     %line{
@@ -281,7 +334,7 @@ $sun-width: 80vh;
     }
     h1{
         font-weight: 300;
-        font-size: 2em;
+        font-size: 2.25em;
         margin: 0;
         line-height: 1;
         // font-family: "Karla", sans-serif;
@@ -293,6 +346,9 @@ $sun-width: 80vh;
             font-size: 4em;
         }
         @media screen and (min-width: 992px){
+            font-size: 5em;
+        }
+        @media screen and (min-width: 1800px){
             font-size: 7em;
         }
 
@@ -366,4 +422,10 @@ $sun-width: 80vh;
 
 #rsvp{
     // margin-top: 0;
+
+    .card{
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            margin-top: 10em;
+        }
+    }
 }

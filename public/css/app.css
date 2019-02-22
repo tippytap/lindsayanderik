@@ -8768,7 +8768,13 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 992px) {
+  .photo-container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .photo-container {
     top: -10em;
   }
@@ -8790,7 +8796,7 @@ nav ul li a:hover {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .w-50 {
     width: 50%;
   }
@@ -8802,6 +8808,46 @@ nav ul li a:hover {
 
 .w-25 {
   width: 25%;
+}
+
+.m.top.t-1 {
+  margin-top: 1em;
+}
+
+.m.top.t-2 {
+  margin-top: 2em;
+}
+
+.m.top.t-3 {
+  margin-top: 3em;
+}
+
+.m.top.t-4 {
+  margin-top: 4em;
+}
+
+.m.top.t-5 {
+  margin-top: 5em;
+}
+
+.m.top.t-6 {
+  margin-top: 6em;
+}
+
+.m.top.t-7 {
+  margin-top: 7em;
+}
+
+.m.top.t-8 {
+  margin-top: 8em;
+}
+
+.m.top.t-9 {
+  margin-top: 9em;
+}
+
+.m.top.t-10 {
+  margin-top: 10em;
 }
 
 .card-container {
@@ -8823,21 +8869,9 @@ nav ul li a:hover {
   left: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .card-container.left {
-    margin-left: 3em;
-  }
-}
-
 .card-container.right {
   position: absolute;
   right: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .card-container.right {
-    margin-right: 3em;
-  }
 }
 
 .center {
@@ -8846,6 +8880,7 @@ nav ul li a:hover {
 
 .card {
   padding: 1em;
+  margin: 1em;
   background: white;
   border: 1px solid #143b4c;
   color: #143b4c;
@@ -8896,15 +8931,22 @@ nav ul li a:hover {
 .mtn {
   position: absolute;
   top: 80vw;
+  min-height: 300px;
   left: 0;
   max-width: 100%;
   width: 100%;
   z-index: 1;
-  min-height: 300px;
   background: #143b4c;
 }
 
 @media screen and (min-width: 768px) {
+  .mtn {
+    top: 55vh;
+    min-height: 1000px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .mtn {
     top: 70vh;
   }
@@ -8953,12 +8995,13 @@ nav ul li a:hover {
   opacity: 0.5;
   width: 45%;
   height: 80vh;
-  margin-top: 5vw;
+  margin-top: 3vw;
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .sun {
-    width: 40%;
+    width: 80%;
+    margin-top: -2em;
   }
 }
 
@@ -8974,12 +9017,11 @@ nav ul li a:hover {
     opacity: 0.5;
     width: 95%;
     height: 42vh;
-    margin-top: 10%;
   }
 }
 
 .headline {
-  margin-top: 10vh;
+  margin-top: 5vw;
   top: 15%;
   color: #143b4c;
   z-index: 1;
@@ -9006,6 +9048,13 @@ nav ul li a:hover {
 @media screen and (min-width: 768px) {
   .headline {
     margin-left: -1em;
+    margin-top: 8vw;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .headline {
+    margin-top: 5vw;
   }
 }
 
@@ -9019,7 +9068,7 @@ nav ul li a:hover {
 
 .headline h1 {
   font-weight: 300;
-  font-size: 2em;
+  font-size: 2.25em;
   margin: 0;
   line-height: 1;
   text-transform: uppercase;
@@ -9034,6 +9083,12 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 992px) {
+  .headline h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (min-width: 1800px) {
   .headline h1 {
     font-size: 7em;
   }
@@ -9099,4 +9154,10 @@ nav ul li a:hover {
 
 .btn:visited {
   color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #rsvp .card {
+    margin-top: 10em;
+  }
 }

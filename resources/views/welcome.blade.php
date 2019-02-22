@@ -54,13 +54,13 @@
 
 
             <div id="rsvp" class="content ">
-                <div class="card-container left">
+                <div class="card-container left w-50">
                     <div class="card layer-up">
                         <div class="card-content">
-                            <h3>Save the date</h3>
-                            <p><strong>June 1, 2019</strong></p>
-                            <p>Lindsay and Erik are getting married! Please join us for a warm, summer's evening of romance and whimsy.</p>
-                            <p>Sundara, Boones Mill, Virginia</p>
+                            <h3>You coming?</h3>
+                            <p><strong>June 1, 2019</strong><br/>Sundara, Boones Mill, Virginia</p>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. Qui officia deserunt mollit anim id est laborum.</p>
+                            <a class="btn btn-primary" href="#">RSVP Here</a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,20 @@
                     <div class="card layer-up">
                         <div class="card-content">
                             <h3>Travel</h3>
-                            <p>Totam rem aperiam. Fugiat quo voluptas nulla pariatur? Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                            <p class="text-left">Totam rem aperiam. Fugiat quo voluptas nulla pariatur? Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                            <a class="btn btn-primary" href="#">Book a room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="" class="content ">
+                <div class="card-container w-50 center">
+                    <div class="card layer-up">
+                        <div class="card-content">
+                            <h3>Our Story</h3>
+                            <p class="text-left">Totam rem aperiam. Fugiat quo voluptas nulla pariatur? Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                            <a class="btn btn-primary" href="#">Book a room</a>
                         </div>
                     </div>
                 </div>
