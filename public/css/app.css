@@ -8895,7 +8895,7 @@ nav ul li a:hover {
 
 .mtn {
   position: absolute;
-  top: 50%;
+  top: 10vh;
   left: 0;
   max-width: 100%;
   width: 100%;
@@ -8906,7 +8906,7 @@ nav ul li a:hover {
 
 @media screen and (min-width: 768px) {
   .mtn {
-    top: 75%;
+    top: 70vh;
   }
 }
 
@@ -8949,11 +8949,23 @@ nav ul li a:hover {
 }
 
 .sun {
-  background: url("../images/sun-full.svg") no-repeat center;
-  opacity: 0.25;
-  width: 100%;
+  background: url("../images/sun2.svg") no-repeat center;
+  opacity: 0.5;
+  width: 45%;
   height: 80vh;
-  margin-top: 10vh;
+  margin-top: 5vh;
+}
+
+@media screen and (min-width: 2000px) {
+  .sun {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+  .sun {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -8966,13 +8978,13 @@ nav ul li a:hover {
 }
 
 .headline {
-  margin-top: 10%;
+  margin-top: 10vh;
   top: 15%;
   color: #143b4c;
   z-index: 1;
   position: relative;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8987,16 +8999,16 @@ nav ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Rubik", sans-serif;
+  font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
   .headline {
-    top: 3em;
     margin-left: -1em;
   }
 }
 
-.headline h1::after, .headline h1::before, .headline h2::after {
+.headline h1::after, .headline h1::before, .headline h1 div::after, .headline h2::after {
   content: "";
   background: #143b4c;
   position: absolute;
@@ -9020,6 +9032,12 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .headline h1 {
+    font-size: 7em;
+  }
+}
+
 .headline h1::after {
   width: 90%;
   top: -10px;
@@ -9027,15 +9045,20 @@ nav ul li a:hover {
 }
 
 .headline h1::before {
-  width: 25%;
-  right: 5%;
-  top: -30px;
+  width: 35%;
+  right: 34px;
+  top: -40px;
+}
+
+.headline h1 div::after {
+  width: 90%;
+  left: 5%;
 }
 
 .headline h2 {
   font-size: 1em;
   font-weight: 300;
-  margin: 0 0 0 5em;
+  margin: 0 0 0 8em;
   position: relative;
   text-align: right;
 }
@@ -9048,8 +9071,8 @@ nav ul li a:hover {
 
 .headline h2::after {
   width: 90%;
-  left: 5%;
-  top: -20px;
+  left: -100%;
+  bottom: 20px;
 }
 
 .paralaxThis {

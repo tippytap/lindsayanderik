@@ -40,7 +40,11 @@
                 <div class="sun"></div>
             </div>
             <div class="headline">
-                <h1>Lindsay + Erik</h1>
+                <h1>
+                    <div>
+                    Lindsay + Erik
+                    </div>
+                </h1>
                 <h2>June 1, 2019</h2>
             </div>
 
