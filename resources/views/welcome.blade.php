@@ -50,8 +50,8 @@
 
 
             <div id="rsvp" class="content ">
-                <div class="card-container w-50">
-                    <div class="card w-100 layer-up">
+                <div class="card-container left">
+                    <div class="card layer-up">
                         <div class="card-content">
                             <h3>Save the date</h3>
                             <p><strong>June 1, 2019</strong></p>
@@ -60,7 +60,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="photo-container paralaxThis right w-50">
+                <div class="photo-container paralaxThis right">
+                    <div class="photo">
+                        <img class="" src="images/laughing.jpg" alt="erik and lindsay laughing">
+                    </div>
+                </div>
+            </div>
+
+            <div id="" class="content ">
+                <div class="card-container right">
+                    <div class="card layer-up">
+                        <div class="card-content">
+                            <h3>Save the date</h3>
+                            <p><strong>June 1, 2019</strong></p>
+                            <p>Lindsay and Erik are getting married! Please join us for a warm, summer's evening of romance and whimsy.</p>
+                            <p>Sundara, Boones Mill, Virginia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container paralaxThis left">
                     <div class="photo">
                         <img class="" src="images/laughing.jpg" alt="erik and lindsay laughing">
                     </div>

@@ -8695,7 +8695,6 @@ object {
 
 body {
   background: #143b4c;
-  min-height: 10000px;
   font-size: 18px;
 }
 
@@ -8732,6 +8731,7 @@ nav ul li a {
   padding-bottom: 5px;
   -webkit-transition: padding-bottom .2s;
   transition: padding-bottom .2s;
+  font-size: 0.85em;
 }
 
 nav ul li a:hover {
@@ -8742,16 +8742,20 @@ nav ul li a:hover {
 }
 
 .content {
-  margin: 30em 2em 0 2em;
+  margin: 15em 0 0 0;
+  top: 30vh;
+  padding: 0 10px;
   position: relative;
   z-index: 10;
   min-height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  background: #143b4c;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    margin-top: 30em;
+  }
 }
 
 .layer-up {
@@ -8764,8 +8768,18 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .photo-container {
+    top: -10em;
+  }
+}
+
 .photo-container.right {
   right: 0;
+}
+
+.photo-container.left {
+  left: 0;
 }
 
 .photo-container img {
@@ -8795,8 +8809,28 @@ nav ul li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 5;
-  position: relative;
-  margin-left: 3em;
+  position: absolute;
+  min-height: 300px;
+}
+
+.card-container.left {
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container.left {
+    margin-left: 3em;
+  }
+}
+
+.card-container.right {
+  right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container.right {
+    margin-right: 3em;
+  }
 }
 
 .card {
@@ -8849,7 +8883,7 @@ nav ul li a:hover {
   max-width: 100%;
   width: 100%;
   z-index: 1;
-  min-height: 1000px;
+  min-height: 300px;
   background: #143b4c;
 }
 
@@ -8861,7 +8895,7 @@ nav ul li a:hover {
 
 .mtn img {
   position: absolute;
-  top: -2.5em;
+  top: -4.5em;
 }
 
 @media screen and (min-width: 768px) {
@@ -8870,7 +8904,7 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1300px) {
   .mtn img {
     top: -15em;
   }
