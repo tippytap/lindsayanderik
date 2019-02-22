@@ -91,7 +91,10 @@ nav ul{
 }
 
 .w-50{
-    width: 50%;
+    width: 100%;
+    @media screen and (min-width: 768px){
+        width: 50%;
+    }
 }
 
 .w-100{
@@ -107,11 +110,11 @@ nav ul{
     align-items: center;
     justify-content: center;
     z-index: 5;
-    position: absolute;
     min-height: 300px;
     // margin-left: 3em;
 
     &.left{
+        position: absolute;
         left: 0;
         @media screen and (min-width: 768px){
             margin-left: 3em;
@@ -119,11 +122,16 @@ nav ul{
     }
 
     &.right{
+        position: absolute;
         right: 0;
         @media screen and (min-width: 768px){
             margin-right: 3em;
         }
     }
+}
+
+.center{
+    margin: 0 auto;
 }
 
 .card{
@@ -136,10 +144,13 @@ nav ul{
     .card-content{
         background: white;
         opacity: 1;
-        padding: 1em;
+        padding: 10px;
         text-align: center;
         border: 1px solid $navy;
         font-family: "Rubik", sans-serif;
+        @media screen and (min-width: 768px){
+            padding: 1em;
+        }
     }
 
     h3,h4{
@@ -147,7 +158,7 @@ nav ul{
     }
     p{
         margin: 0;
-        padding: 1em 2em;
+        padding-bottom: 1em;
     }
 
     h3{

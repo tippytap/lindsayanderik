@@ -68,19 +68,12 @@
             </div>
 
             <div id="" class="content ">
-                <div class="card-container right">
+                <div class="card-container w-50 center">
                     <div class="card layer-up">
                         <div class="card-content">
-                            <h3>Save the date</h3>
-                            <p><strong>June 1, 2019</strong></p>
-                            <p>Lindsay and Erik are getting married! Please join us for a warm, summer's evening of romance and whimsy.</p>
-                            <p>Sundara, Boones Mill, Virginia</p>
+                            <h3>Travel</h3>
+                            <p>Totam rem aperiam. Fugiat quo voluptas nulla pariatur? Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="photo-container paralaxThis left">
-                    <div class="photo">
-                        <img class="" src="images/laughing.jpg" alt="erik and lindsay laughing">
                     </div>
                 </div>
             </div>

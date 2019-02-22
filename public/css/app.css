@@ -8787,7 +8787,13 @@ nav ul li a:hover {
 }
 
 .w-50 {
-  width: 50%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .w-50 {
+    width: 50%;
+  }
 }
 
 .w-100 {
@@ -8809,11 +8815,11 @@ nav ul li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 5;
-  position: absolute;
   min-height: 300px;
 }
 
 .card-container.left {
+  position: absolute;
   left: 0;
 }
 
@@ -8824,6 +8830,7 @@ nav ul li a:hover {
 }
 
 .card-container.right {
+  position: absolute;
   right: 0;
 }
 
@@ -8831,6 +8838,10 @@ nav ul li a:hover {
   .card-container.right {
     margin-right: 3em;
   }
+}
+
+.center {
+  margin: 0 auto;
 }
 
 .card {
@@ -8844,10 +8855,16 @@ nav ul li a:hover {
 .card .card-content {
   background: white;
   opacity: 1;
-  padding: 1em;
+  padding: 10px;
   text-align: center;
   border: 1px solid #143b4c;
   font-family: "Rubik", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .card .card-content {
+    padding: 1em;
+  }
 }
 
 .card h3, .card h4 {
@@ -8856,7 +8873,7 @@ nav ul li a:hover {
 
 .card p {
   margin: 0;
-  padding: 1em 2em;
+  padding-bottom: 1em;
 }
 
 .card h3 {
