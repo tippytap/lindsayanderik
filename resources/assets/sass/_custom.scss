@@ -183,7 +183,8 @@ nav ul{
     position: absolute;
     // opacity: 0.7;
     // top: 50%;
-    top: 10vh;
+    // top: 55vh;
+    top: 80vw;
     left: 0;
     max-width: 100%;
     width: 100%;
@@ -212,9 +213,9 @@ nav ul{
 $sun-width: 80vh;
 .sun-wrapper{
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
+    margin-top: -1em;
     height: auto;
     display: flex;
     align-items: center;
@@ -233,7 +234,8 @@ $sun-width: 80vh;
     // transform: translateX(-50%);
     // margin-top: 5%;
     // margin-top: 10vh;
-    margin-top: 5vh;
+    // margin-top: 5vh;
+    margin-top: 5vw;
     // background-blend-mode: overlay;
     @media screen and (min-width: 2000px){
         width: 40%;
@@ -246,6 +248,7 @@ $sun-width: 80vh;
         opacity: 0.5;
         width: 95%;
         height: 42vh;
+        margin-top: 10%;
     }
 }
 

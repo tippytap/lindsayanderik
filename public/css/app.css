@@ -8895,7 +8895,7 @@ nav ul li a:hover {
 
 .mtn {
   position: absolute;
-  top: 10vh;
+  top: 80vw;
   left: 0;
   max-width: 100%;
   width: 100%;
@@ -8933,9 +8933,9 @@ nav ul li a:hover {
 
 .sun-wrapper {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
+  margin-top: -1em;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8953,7 +8953,7 @@ nav ul li a:hover {
   opacity: 0.5;
   width: 45%;
   height: 80vh;
-  margin-top: 5vh;
+  margin-top: 5vw;
 }
 
 @media screen and (min-width: 2000px) {
@@ -8974,6 +8974,7 @@ nav ul li a:hover {
     opacity: 0.5;
     width: 95%;
     height: 42vh;
+    margin-top: 10%;
   }
 }
 
