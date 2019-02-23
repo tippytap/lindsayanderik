@@ -14,7 +14,7 @@ class AddPlusoneToInvitees extends Migration
     public function up()
     {
         Schema::table('invitees', function (Blueprint $table) {
-            //
+            $table->string('plusone')->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ class AddPlusoneToInvitees extends Migration
     public function down()
     {
         Schema::table('invitees', function (Blueprint $table) {
-            //
+            $table->dropColumn('plusone');
         });
     }
 }
