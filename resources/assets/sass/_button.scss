@@ -1,10 +1,10 @@
 
 .btn{
     border-radius: 0;
-    letter-spacing: 0.15vw;
-    text-transform: uppercase;
 
     &.btn-primary{
+        letter-spacing: 0.15vw;
+        text-transform: uppercase;
         background-color: $navy;
         border-color: $navy;
 

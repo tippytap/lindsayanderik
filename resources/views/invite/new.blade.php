@@ -7,9 +7,18 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h2>Invite someone to our wedding</h2>
+                    <h2>RSVP Form</h2>
                 </div>
                 <div class="panel-body">
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
                 <form action='{{ route("createInvite", ["wedding" => $wedding->id]) }}' class="form-horizontal" method="POST">
                         {{ csrf_field() }}
                         <div class="row">
@@ -25,20 +34,24 @@
                                 <br/>
                                 <p>Attending?</p>
                                 <label for="yes" class="control-label">Yes</label>
-                                <input type="radio" name="attending" id="yes" value="yes" checked>
+                                <input type="radio" name="attending" id="yes" value="yes">
                                 <label for="no" class="control-label">No</label>
                                 <input type="radio" name="attending" id="no" value="no">
                             </div>
                             <div class="col-md-3">
                                 <br/>
-                                <label for="numguests" class="control-label">Number of guests</label>
-                                <input type="number" id="numguests" value="0" class="form-control" name="numguests">
+                                <label for="numguests" class="control-label">Are you bringing guests?</label>
+                                <input type="number" id="numguests" value="0" min="0" max="5" class="form-control" name="numguests">
                             </div>
                             <div class="col-md-12">
                                 <br/>
                                 <button class="btn btn-primary col-md-4">RSVP</button>
                                 &nbsp;
-                                <a href="{{url('/wedding/' . $wedding->id)}}" class="btn btn-danger">Cancel</a>
+                                @if(Auth::guest())
+                                <a href="{{ url('/') }}" class="btn btn-danger">Cancel</a>
+                                @else
+                                <a class="btn btn-danger" href="{{ url('/home') }}">Cancel</a>
+                                @endif
                             </div>
                         </div>
                     </form>

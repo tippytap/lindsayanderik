@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 use App\Wedding;
+use App\Invitee;
 
 class HomeController extends Controller
 {
@@ -26,9 +27,20 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $total_guests = 0;
         $weddings = Wedding::where('owner', Auth::id())->get();
+        foreach($weddings as $wedding){
+            $wedding->attendees = Invitee::where('wedding', $wedding->id)->get();
+            foreach($wedding->attendees as $attendee){
+                if($attendee->attending){
+                    $total_guests += (1 + $attendee->guests);
+                }
+            }
+        }
+
         return view('home', [
-            'weddings' => $weddings
+            'weddings' => $weddings,
+            'total' => $total_guests
         ]);
     }
 }

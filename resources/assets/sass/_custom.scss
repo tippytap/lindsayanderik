@@ -439,3 +439,17 @@ $sun-width: 80vh;
         }
     }
 }
+
+.attendees-list{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+        padding: 1em;
+        margin: 0;
+
+        &:nth-child(2n){
+            background: rgba(0, 0, 0, 0.1);
+        }
+    }
+}

@@ -7712,11 +7712,11 @@ button.close {
 
 .btn {
   border-radius: 0;
-  letter-spacing: 0.15vw;
-  text-transform: uppercase;
 }
 
 .btn.btn-primary {
+  letter-spacing: 0.15vw;
+  text-transform: uppercase;
   background-color: #143b4c;
   border-color: #143b4c;
 }
@@ -9181,4 +9181,19 @@ nav ul li a:hover {
   #rsvp .card {
     margin-top: 10em;
   }
+}
+
+.attendees-list {
+  padding: 0;
+  margin: 0;
+}
+
+.attendees-list li {
+  list-style: none;
+  padding: 1em;
+  margin: 0;
+}
+
+.attendees-list li:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.1);
 }
