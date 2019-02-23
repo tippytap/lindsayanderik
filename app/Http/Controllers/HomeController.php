@@ -33,7 +33,8 @@ class HomeController extends Controller
             $wedding->attendees = Invitee::where('wedding', $wedding->id)->get();
             foreach($wedding->attendees as $attendee){
                 if($attendee->attending){
-                    $total_guests += (1 + $attendee->guests);
+                    $total_guests++;
+                    if($attendee->plusone) $total_guests++;
                 }
             }
         }

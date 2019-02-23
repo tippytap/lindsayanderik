@@ -18,7 +18,7 @@ class CreateInviteesTable extends Migration
             $table->timestamps();
             $table->integer("wedding")->unsigned();
             $table->boolean("attending");
-            $table->integer("guests");
+            $table->integer("guests")->nullable();
             $table->string("firstname");
             $table->string("lastname");
         });

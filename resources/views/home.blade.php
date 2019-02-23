@@ -24,21 +24,25 @@
                     <br>
                     <h3>Attendees</h3>
                     <hr>
+                    @if(count($wedding->attendees) > 0)
                     <ul class="attendees-list">
                         @foreach($wedding->attendees as $attendee)
                         <li>
                             <div>
-                                <strong>{{ "$attendee->firstname $attendee->lastname" }}</strong>
+                            <strong>{{ "$attendee->firstname $attendee->lastname" }}</strong>&nbsp;&nbsp;<a href='{{ url("/invitee/$wedding->id/$attendee->id") }}' class="">Edit</a>
                             <span class="pull-right {{ ($attendee->attending) ? 'text-success' : 'text-danger' }}">{{ ($attendee->attending) ? "Attending" : "Not Attending" }}</span>
                             </div>
-                            @if($attendee->guests > 0)
-                            <div class="text-right">
-                                Additional guests: {{ $attendee->guests }}
+                            @if($attendee->plusone)
+                            <div class="text-left">
+                                Also bringing: {{ $attendee->plusone }}
                             </div>
                             @endif
                         </li>
                         @endforeach
                     </ul>
+                    @else
+                    <p>No attendees yet.</p>
+                    @endif
                 </div>
                 <div class="panel-footer">
                     <div class="text-right">

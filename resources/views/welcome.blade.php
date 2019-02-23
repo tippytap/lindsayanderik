@@ -60,7 +60,8 @@
                             <h3>You coming?</h3>
                             <p><strong>June 1, 2019</strong><br/>Sundara, Boones Mill, Virginia</p>
                             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. Qui officia deserunt mollit anim id est laborum.</p>
-                        <a class="btn btn-primary" href='{{ url("/invite/1") }}'>RSVP Here</a>
+                            <a class="btn btn-primary" href='{{ url("/invite/1") }}'>RSVP Here</a>
+                            <div style="margin-top: 10px;">or email us at <a href="mailto:lindskey@gmail.com">lindskey@gmail.com</a></div>
                         </div>
                     </div>
                 </div>

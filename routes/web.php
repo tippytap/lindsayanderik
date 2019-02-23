@@ -23,3 +23,5 @@ Route::get('/wedding/{id}', 'WeddingController@show')->name('weddingShow');
 
 Route::get('/invite/{wedding}', 'InviteeController@invite');
 Route::post('/create/{wedding}', 'Inviteecontroller@create')->name('createInvite');
+Route::get('/invitee/{wedding}/{id}', 'InviteeController@edit')->name('editInvitee');
+Route::post('/invitee/{weddint}/{id}', 'InviteeController@update');
