@@ -40,8 +40,10 @@
                             </div>
                             <div class="col-md-3">
                                 <br/>
-                                <label for="numguests" class="control-label">Are you bringing guests?</label>
-                                <input type="number" id="numguests" value="0" min="0" max="5" class="form-control" name="numguests">
+                                {{-- <label for="numguests" class="control-label">Number of guests</label>
+                                <input type="number" id="numguests" value="0" min="0" max="5" class="form-control" name="numguests"> --}}
+                                <lable for="plusone" class="control-label">Plus one name:</lable>
+                                <input class="form-control" type="text" placeholder="Jane Doe" name="plusone" id="plusone">
                             </div>
                             <div class="col-md-12">
                                 <br/>
