@@ -11,6 +11,10 @@ class WeddingSeed extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('weddings')->insert([
+            'name' => 'Lindsay and Erik',
+            'location' => 'Sundara, Boones Mill, VA',
+            'owner' => 1
+        ]);
     }
 }
