@@ -28,7 +28,13 @@ class HomeController extends Controller
     public function index()
     {
         $total_guests = 0;
-        $weddings = Wedding::where('owner', Auth::id())->get();
+        $authID = Auth::id();
+
+        // if Lindsay, set the id to 1 so she can see the wedding
+        if($authID === 2){
+            $authID = 1;
+        }
+        $weddings = Wedding::where('owner', $authID)->get();
         foreach($weddings as $wedding){
             $wedding->attendees = Invitee::where('wedding', $wedding->id)->get();
             foreach($wedding->attendees as $attendee){
