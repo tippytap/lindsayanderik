@@ -21,8 +21,8 @@ return [
     */
 
     // 'default' => env('DB_CONNECTION', 'mysql'),
-    'default' => env('DB_CONNECTION', 'dev'),
-    // 'default' => env('DB_CONNECTION', 'prod'),
+    // 'default' => env('DB_CONNECTION', 'dev'),
+    'default' => env('DB_CONNECTION', 'prod'),
 
     /*
     |-------------------------------------------------------------------------
