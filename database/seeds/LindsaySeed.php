@@ -14,7 +14,7 @@ class LindsaySeed extends Seeder
         DB::table('users')->insert([
             'name' => 'Lindsay Key',
             'email' => 'lindskey@gmail.com',
-            'password' => bcrypt('1linds4vt')
+            'password' => bcrypt('1lindsvt!')
         ]);
     }
 }
