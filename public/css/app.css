@@ -9197,3 +9197,38 @@ nav ul li a:hover {
 .attendees-list li:nth-child(2n) {
   background: rgba(0, 0, 0, 0.1);
 }
+
+.registry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.registry .registry-block {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.registry-link {
+  font-size: 6em;
+  color: black;
+  display: block;
+  width: 100%;
+  padding: 10px 10px 20px 15px;
+}
+
+.registry-link:hover {
+  color: white;
+  background: #143b4c;
+}
