@@ -84,7 +84,7 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <h4 class="text-left">
-                                        <strong style="font-size: 2em; text-transform: uppercase;">Hilton Garden Inn</strong><br>
+                                        <strong style="font-size: 2em; text-transform: uppercase;">Hilton Garden Inn<br>
                                         4500 South Peak Boulevard, Roanoke, Virginia 24018
                                     </h4>
                                         <br>
@@ -127,7 +127,7 @@
                                     </a>
                                 </div>
                                 <div class="registry-block">
-                                    <a id="wayfair" href="#" class="registry-link" aria-label="Honeyfund registry link">
+                                    <a id="wayfair" href="https://www.wayfair.com/registry/wedding/LindsayAndErikWedding" class="registry-link" aria-label="Honeyfund registry link">
                                         <img src="images/wayfair.svg" class="show" alt="wayfair logo">
                                         <img src="images/wayfair-white.svg" class="hide" alt="wayfair logo">
                                     </a>
