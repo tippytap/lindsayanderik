@@ -153,17 +153,18 @@ nav ul{
     // margin-left: 3em;
 
     &.left{
-        position: absolute;
+        position: relative;
         left: 0;
         @media screen and (min-width: 992px){
-            // margin-left: 3em;
+            position: absolute;
         }
     }
 
     &.right{
-        position: absolute;
+        position: relative;
         right: 0;
         @media screen and (min-width: 992px){
+            position: absolute;
             // margin-right: 3em;
         }
     }
@@ -451,5 +452,45 @@ $sun-width: 80vh;
         &:nth-child(2n){
             background: rgba(0, 0, 0, 0.1);
         }
+    }
+}
+
+.registry{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    @media screen and (max-width: 991px){
+        display: block;
+    }
+
+    .registry-block{
+        width: 33.33%;
+        // width: 25%;
+        display: flex;
+        align-items: stretch;
+
+        @media screen and (max-width: 991px){
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.registry-link{
+    font-size: 6em;
+    color: black;
+    display: block;
+    width: 50%;
+    padding: 10px 10px 20px 15px;
+    align-self: center;
+    margin: 0 auto;
+
+    @media screen and (max-width: 991px){
+        width: 100%;
+    }
+    &:hover{
+        color: black;
+        // background: $navy;
     }
 }
