@@ -83,11 +83,12 @@
                         <div class="card-content">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <h4 class="text-left">
-                                        <strong style="font-size: 2em; text-transform: uppercase;">Hilton Garden Inn<br>
-                                        4500 South Peak Boulevard, Roanoke, Virginia 24018
+                                    <h4 class="card-heading text-left">
+                                        <strong>
+                                            <span class="primary-heading">Hilton Garden Inn</span>
+                                            <em>4500 South Peak Boulevard, Roanoke, Virginia 24018</em>
+                                        </strong>
                                     </h4>
-                                        <br>
                                     <p class="text-left">
                                         For your convenience, a block of hotel rooms has been reserved at the Hilton Garden Inn.
                                     </p>
