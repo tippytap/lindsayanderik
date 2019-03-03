@@ -32,10 +32,6 @@
                             </div>
                             <div class="col-md-6">
                                 @if($invitee->attending)
-                                    {{-- <label for="yes" class="control-label">Yes</label>
-                                    <input type="radio" name="attending" id="yes" value="yes" checked>
-                                    <label for="no" class="control-label">No</label>
-                                    <input type="radio" name="attending" id="no" value="no"> --}}
                                     <br>
                                     <strong>Attending?</strong>
                                     <div class="radio">
@@ -52,10 +48,6 @@
                                     </div>
                                 @endif
                                 @if(!$invitee->attending)
-                                    {{-- <label for="yes" class="control-label">Yes</label>
-                                    <input type="radio" name="attending" id="yes" value="yes">
-                                    <label for="no" class="control-label">No</label>
-                                    <input type="radio" name="attending" id="no" value="no" checked> --}}
                                     <br>
                                     <strong>Attending?</strong>
                                     <div class="radio">
@@ -75,27 +67,22 @@
                             <div class="col-md-3">
                                 <br/>
                                 <lable for="plusone" class="control-label">Plus one name:</lable>
-                            <input class="form-control" type="text" placeholder="Jane Doe" name="plusone" id="plusone" value='{{ "$invitee->plusone" }}'>
-                            </div>
-                            <div class="col-md-12">
-                            @if($invitee->shuttle)
-                            <br>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="" type="checkbox" name="shuttle" id="shuttle" checked> <strong>I will be using the shuttle</strong>
+                                <input class="form-control" type="text" placeholder="Jane Doe" name="plusone" id="plusone" value='{{ "$invitee->plusone" }}'>
+                                <div class="form-group col-xs-12">
+                                    <br>
+                                    <label for="numguests">
+                                        How many kids?
+                                        <input class="form-control" name="numguests" id="numguests" value='{{ ($invitee->guests) ? $invitee->guests : 0 }}' type="number"/>
                                     </label>
                                 </div>
-                            </div>
-                            @endif
-                            @if(!$invitee->shuttle)
-                            <br>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="" type="checkbox" name="shuttle" id="shuttle"> <strong>I will be using the shuttle</strong>
-                                    </label>
+                                <div class="col-md-12 form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input class="" type="checkbox" name="shuttle" id="shuttle" {{ ($invitee->shuttle) ? 'checked' : '' }}> <strong>My party will use the shuttle</strong>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            @endif
                             <div class="col-md-12">
                                 <br/>
                                 <button class="btn btn-primary col-md-4">Update</button>

@@ -28,7 +28,7 @@ class InviteeController extends Controller
     }
 
     public function update(Request $request, $wedding, $invitee){
-        
+
         $validatedData = $this->validate($request, [
             'firstname' => 'required',
             'lastname' => 'required',
@@ -40,6 +40,8 @@ class InviteeController extends Controller
         $invitee->firstname = $request->input('firstname');
         $invitee->lastname = $request->input('lastname');
         $invitee->attending = ($request->input('attending') == 'yes') ? true : false;
+
+        $invitee->guests = $request->input('numguests');
 
         if($invitee->attending){
             $invitee->plusone = ($request->input('plusone')) ? $request->input('plusone') : null;
