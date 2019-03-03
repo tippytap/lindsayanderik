@@ -50,13 +50,19 @@
                                 <br/>
                                 <lable for="plusone" class="control-label"><strong>Plus one name:</strong></lable>
                                 <input class="form-control" type="text" placeholder="Jane Doe" name="plusone" id="plusone">
-                            </div>
-                            <div class="col-md-12">
-                            <br>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="" type="checkbox" name="shuttle" id="shuttle"> <strong>I will be using the shuttle</strong>
+                                <div class="form-group col-xs-12">
+                                    <br>
+                                    <label for="numguests">
+                                        How many kids?
+                                        <input class="form-control" id="numguests" name="numguests" value="0" type="number"/>
                                     </label>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input class="" type="checkbox" name="shuttle" id="shuttle"> <strong>My party will use the shuttle</strong>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-xs-12">

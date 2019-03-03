@@ -34,9 +34,16 @@
                             </div>
                             @if($attendee->plusone)
                             <div class="text-left">
-                                Also bringing: {{ $attendee->plusone }}
+                                Also bringing: {{ $attendee->plusone }} 
                             </div>
                             @endif
+
+                            @if($attendee->guests > 0)
+                            <div class="text-left">
+                                + {{ $attendee->guests }} kid(s)
+                            </div>
+                            @endif
+
                             @if($attendee->shuttle)
                             <div class="text-left">
                                 Shuttle <span class="text-success fas fa-check-circle"></span>

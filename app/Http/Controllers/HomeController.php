@@ -42,6 +42,9 @@ class HomeController extends Controller
                     $total_guests++;
                     if($attendee->plusone) $total_guests++;
                 }
+                if($attendee->guests > 0){
+                    $total_guests += $attendee->guests;
+                }
             }
         }
 
