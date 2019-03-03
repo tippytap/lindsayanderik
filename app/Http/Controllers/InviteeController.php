@@ -41,8 +41,10 @@ class InviteeController extends Controller
         $invitee->lastname = $request->input('lastname');
         $invitee->attending = ($request->input('attending') == 'yes') ? true : false;
 
-        if($invitee->attending)
+        if($invitee->attending){
             $invitee->plusone = ($request->input('plusone')) ? $request->input('plusone') : null;
+            $invitee->shuttle = ($request->input('shuttle')) ? true : false;
+        }
         
         if(!$invitee->attending && $invitee->plusone)
             $invitee->plusone = null;
@@ -71,8 +73,10 @@ class InviteeController extends Controller
 
             $invitee->guests = $request->input('numguests');
 
-            if($invitee->attending)
+            if($invitee->attending){
                 $invitee->plusone = ($request->input('plusone')) ? $request->input('plusone') : null;
+                $invitee->shuttle = ($request->input('shuttle')) ? true : false;
+            }
             
             if(!$invitee->attending && $invitee->plusone)
                 $invitee->plusone = null;
