@@ -31,21 +31,35 @@
                                 <input class="form-control" type="text" placeholder="Doe" name="lastname" id="lastname">
                             </div>
                             <div class="col-md-6">
-                                <br/>
-                                <p>Attending?</p>
-                                <label for="yes" class="control-label">Yes</label>
-                                <input type="radio" name="attending" id="yes" value="yes">
-                                <label for="no" class="control-label">No</label>
-                                <input type="radio" name="attending" id="no" value="no">
+                                <br>
+                                <strong>Attending?</strong>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="attending" id="yes" value="yes">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="attending" id="no" value="no">
+                                        No
+                                    </label>
+                                </div>
                             </div>
                             <div class="col-md-3">
                                 <br/>
-                                {{-- <label for="numguests" class="control-label">Number of guests</label>
-                                <input type="number" id="numguests" value="0" min="0" max="5" class="form-control" name="numguests"> --}}
-                                <lable for="plusone" class="control-label">Plus one name:</lable>
+                                <lable for="plusone" class="control-label"><strong>Plus one name:</strong></lable>
                                 <input class="form-control" type="text" placeholder="Jane Doe" name="plusone" id="plusone">
                             </div>
                             <div class="col-md-12">
+                            <br>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="" type="checkbox" name="shuttle" id="shuttle"> <strong>I will be using the shuttle</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
                                 <br/>
                                 <button class="btn btn-primary col-md-4">RSVP</button>
                                 &nbsp;

@@ -37,6 +37,11 @@
                                 Also bringing: {{ $attendee->plusone }}
                             </div>
                             @endif
+                            @if($attendee->shuttle)
+                            <div class="text-left">
+                                Shuttle <span class="text-success fas fa-check-circle"></span>
+                            </div>
+                            @endif
                         </li>
                         @endforeach
                     </ul>
