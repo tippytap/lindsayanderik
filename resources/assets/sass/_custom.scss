@@ -187,6 +187,7 @@ nav ul{
     color: $navy;
     border: 1px solid $navy;
 
+
     .card-content{
         background: white;
         opacity: 1;
@@ -196,6 +197,16 @@ nav ul{
         font-family: "Rubik", sans-serif;
         @media screen and (min-width: 768px){
             padding: 1em;
+        }
+
+        .card-heading{
+            margin-bottom: 1em;
+            .primary-heading{
+                font-size: 2em;
+                text-transform: uppercase;
+                display: block;
+                margin-bottom: 10px;
+            }
         }
     }
 

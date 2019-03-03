@@ -8934,6 +8934,17 @@ nav ul li a:hover {
   }
 }
 
+.card .card-content .card-heading {
+  margin-bottom: 1em;
+}
+
+.card .card-content .card-heading .primary-heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .card h3, .card h4 {
   margin: 0;
 }
