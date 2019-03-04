@@ -8713,14 +8713,14 @@ body {
   font-size: 18px;
 }
 
-nav {
+.topnav {
   width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 5;
 }
 
-nav ul {
+.topnav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8734,12 +8734,12 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
+.topnav ul li {
   list-style: none;
   margin: 0 0.5em;
 }
 
-nav ul li a {
+.topnav ul li a {
   color: #143b4c;
   text-decoration: none;
   border-bottom: 2px solid #143b4c;
@@ -8749,7 +8749,7 @@ nav ul li a {
   font-size: 0.85em;
 }
 
-nav ul li a:hover {
+.topnav ul li a:hover {
   text-decoration: none;
   color: white;
   border-bottom-color: white;
@@ -9183,7 +9183,7 @@ nav ul li a:hover {
   -o-transition: all ease-out 100ms;
 }
 
-.top-right.links {
+.top-right.links .btn {
   position: absolute;
   top: 1em;
   right: 1em;
@@ -9191,7 +9191,7 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .top-right.links {
+  .top-right.links .btn {
     display: none;
   }
 }

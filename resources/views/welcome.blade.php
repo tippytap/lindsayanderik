@@ -20,7 +20,7 @@
                 </div>
             @endif
         <main class="wrapper">
-            <nav>
+            <nav class="topnav">
                 <ul>
                     <li>
                         <a href="#rsvp">RSVP</a>
