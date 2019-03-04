@@ -9,13 +9,13 @@ body{
     // width: 100%;
     font-size: 18px;
 }
-nav{
+.topnav{
     width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 5;
 }
-nav ul{
+.topnav ul{
     display: flex;
     // font-family: "Varela Round", sans-serif;
     // position: absolute;
@@ -428,7 +428,7 @@ $sun-width: 80vh;
     -o-transition: all ease-out 100ms;
 }
 
-.top-right.links{
+.top-right.links .btn{
     position: absolute;
     top: 1em;
     right: 1em;
