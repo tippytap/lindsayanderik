@@ -31,7 +31,7 @@ class HomeController extends Controller
         $authID = Auth::id();
 
         // if Lindsay, set the id to 1 so she can see the wedding
-        if($authID === 2){
+        if($authID === 2 || $authID === 3){
             $authID = 1;
         }
         $weddings = Wedding::where('owner', $authID)->get();

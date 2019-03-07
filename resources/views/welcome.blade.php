@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/app.css"/>
-        <!-- <link href="https://fonts.googleapis.com/css?family=Karla:700|Varela+Round" rel="stylesheet"> -->
     </head>
     <body>
             @if (Route::has('login'))
@@ -15,11 +14,15 @@
                         <a class="btn btn-primary" href="{{ url('/home') }}">Home</a>
                     @else
                         <a class="btn btn-primary" href="{{ url('/login') }}">Login</a>
-                        {{-- <a href="{{ url('/register') }}">Register</a> --}}
                     @endif
                 </div>
             @endif
         <main class="wrapper">
+            @if (Session::has('message'))
+                <div class="alert alert-info wedding-alert">
+                    {{ Session::get('message') }}
+                </div>
+            @endif
             <nav class="topnav">
                 <ul>
                     <li>
@@ -142,18 +145,13 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function(){
-            // $("#honeyfund").find('img').eq(1).hide();
-            // $('#honeyfund').hover(function(){
-            //     var img = $(this).find('img');
-            //     img.each(function(){
-            //         if($(this).hasClass('hide')){
-            //             $(this).removeClass('hide').addClass('show');
-            //         }
-            //         else{
-            //             $(this).removeClass('show').addClass('hide');
-            //         }
-            //     })
-            // });
+            $('.alert').each(function(){
+                var $this = $(this);
+                setTimeout(function(){
+                    console.log('boopydoopydoo');
+                    $this.fadeOut('slow');
+                }, 5000);
+            })
         });
         </script>
         <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/brands.js" integrity="sha384-zJ8/qgGmKwL+kr/xmGA6s1oXK63ah5/1rHuILmZ44sO2Bbq1V3p3eRTkuGcivyhD" crossorigin="anonymous"></script>

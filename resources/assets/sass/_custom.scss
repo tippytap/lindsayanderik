@@ -505,3 +505,18 @@ $sun-width: 80vh;
         // background: $navy;
     }
 }
+
+.guest-heading{
+    h3{
+        margin: 0;
+    }
+}
+
+.alert{
+    &.wedding-alert{
+        position: absolute;
+        top: 5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
