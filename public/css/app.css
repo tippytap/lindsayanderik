@@ -9276,3 +9276,15 @@ body {
 .registry-link:hover {
   color: black;
 }
+
+.guest-heading h3 {
+  margin: 0;
+}
+
+.alert.wedding-alert {
+  position: absolute;
+  top: 5em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}

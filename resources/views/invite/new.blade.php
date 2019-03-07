@@ -22,6 +22,9 @@
                 <form action='{{ route("createInvite", ["wedding" => $wedding->id]) }}' class="form-horizontal" method="POST">
                         {{ csrf_field() }}
                         <div class="row">
+                            <div class="col-xs-12 guest-heading">
+                                <h3><small>Guest 1</small></h3>
+                            </div>
                             <div class="col-md-6">
                                 <label for="firstname" class="control-label">First name</label>
                                 <input class="form-control" type="text" placeholder="John" name="firstname" id="firstname">
@@ -30,6 +33,22 @@
                                 <label for="lastname" class="control-label">Last name</label>
                                 <input class="form-control" type="text" placeholder="Doe" name="lastname" id="lastname">
                             </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-12 guest-heading">
+                                <h3><small>Guest 2</small></h3>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="firstname-2" class="control-label">First name</label>
+                                <input class="form-control" type="text" placeholder="John" name="firstname-2" id="firstname">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastname-2" class="control-label">Last name</label>
+                                <input class="form-control" type="text" placeholder="Doe" name="lastname-2" id="lastname">
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-6">
                                 <br>
                                 <strong>Attending?</strong>
@@ -48,15 +67,6 @@
                             </div>
                             <div class="col-md-3">
                                 <br/>
-                                <lable for="plusone" class="control-label"><strong>Plus one name:</strong></lable>
-                                <input class="form-control" type="text" placeholder="Jane Doe" name="plusone" id="plusone">
-                                <div class="form-group col-xs-12">
-                                    <br>
-                                    <label for="numguests">
-                                        How many kids?
-                                        <input class="form-control" id="numguests" name="numguests" value="0" type="number"/>
-                                    </label>
-                                </div>
                                 <div class="col-md-12 form-group">
                                     <div class="checkbox">
                                         <label>

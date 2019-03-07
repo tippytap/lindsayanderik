@@ -76,7 +76,10 @@ class InviteeController extends Controller
             $invitee->guests = $request->input('numguests');
 
             if($invitee->attending){
-                $invitee->plusone = ($request->input('plusone')) ? $request->input('plusone') : null;
+                if($request->input('firstname-2') && $request->input('lastname-2')){
+                    // $invitee->plusone = ($request->input('plusone')) ? $request->input('plusone') : null;
+                    $invitee->plusone = $request->input('firstname-2') . " " . $request->input('lastname-2');
+                }
                 $invitee->shuttle = ($request->input('shuttle')) ? true : false;
             }
             
@@ -89,6 +92,12 @@ class InviteeController extends Controller
         }
 
         if(!Auth::check()){
+            if($invitee->attending){
+                $request->session()->flash('message', 'Thank you! Your RSVP has been received.');
+            }
+            else{
+                $request->session()->flash('message', 'Thank you for your response! We are sorry to miss you but hope to see you soon!');
+            }
             return redirect('/');
         }
 
