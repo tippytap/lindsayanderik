@@ -23,7 +23,7 @@
                         {{ csrf_field() }}
                         <div class="row">
                             <div class="col-xs-12 guest-heading">
-                                <h3><small>Guest 1</small></h3>
+                                <h3><small>Name(s)</small></h3>
                             </div>
                             <div class="col-md-6">
                                 <label for="firstname" class="control-label">First name</label>
@@ -36,9 +36,9 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xs-12 guest-heading">
+                            {{-- <div class="col-xs-12 guest-heading">
                                 <h3><small>Guest 2</small></h3>
-                            </div>
+                            </div> --}}
                             <div class="col-md-6">
                                 <label for="firstname-2" class="control-label">First name</label>
                                 <input class="form-control" type="text" placeholder="John" name="firstname-2" id="firstname">
@@ -51,30 +51,46 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <br>
-                                <strong>Attending?</strong>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="attending" id="yes" value="yes">
-                                        Yes
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="attending" id="no" value="no">
-                                        No
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <br/>
-                                <div class="col-md-12 form-group">
-                                    <div class="checkbox">
+                                <fieldset>
+                                    <legend>
+                                        <strong>Attending?</strong>
+                                    </legend>
+                                    <div class="radio">
                                         <label>
-                                            <input class="" type="checkbox" name="shuttle" id="shuttle"> <strong>My party will use the shuttle</strong>
+                                            <input type="radio" name="attending" id="yes" value="yes">
+                                            Happily accept
                                         </label>
                                     </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="attending" id="no" value="no">
+                                            Regretfully decline
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="numguests">
+                                    Total number attending in my party
+                                    <input class="form-control" name="numguests" id="numguests" value='0' max='10' min='0' type="number"/>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <br/>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="" type="checkbox" name="shuttle" id="shuttle"> <strong>My party will use the shuttle that will be available at the Hilton Garden Inn to travel to and from the wedding location.</strong>
+                                    </label>
                                 </div>
                             </div>
+                        </div>
+                        <br>
+                        <div class="row">
                             <div class="col-xs-12">
                                 <br/>
                                 <button class="btn btn-primary col-md-4">RSVP</button>

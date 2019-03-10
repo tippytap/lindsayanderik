@@ -7955,15 +7955,10 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
 legend {
   border: 0;
   padding: 0;
+  margin-bottom: 0;
 }
 
 textarea {
@@ -8602,6 +8597,10 @@ object {
   background: orange;
   -webkit-box-shadow: 10px 0 0 orange, -10px 0 0 orange;
           box-shadow: 10px 0 0 orange, -10px 0 0 orange;
+}
+
+.push-right {
+  padding-left: 2em;
 }
 
 /**
