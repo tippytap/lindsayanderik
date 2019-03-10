@@ -84,7 +84,7 @@
                                 <br/>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="" type="checkbox" name="shuttle" id="shuttle"> <strong>My party will use the shuttle that will be available at the Hilton Garden Inn to travel to and from the wedding location.</strong>
+                                        <input class="" type="checkbox" name="shuttle" id="shuttle"><strong>My party will use the shuttle that will be available at the Hilton Garden Inn to travel to and from the wedding location.</strong>
                                     </label>
                                 </div>
                             </div>

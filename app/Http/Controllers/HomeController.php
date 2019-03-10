@@ -34,16 +34,22 @@ class HomeController extends Controller
         if($authID === 2 || $authID === 3){
             $authID = 1;
         }
+
         $weddings = Wedding::where('owner', $authID)->get();
+
         foreach($weddings as $wedding){
+
             $wedding->attendees = Invitee::where('wedding', $wedding->id)->get();
+
             foreach($wedding->attendees as $attendee){
                 if($attendee->attending){
-                    $total_guests++;
-                    if($attendee->plusone) $total_guests++;
-                }
-                if($attendee->guests > 0){
-                    $total_guests += $attendee->guests;
+                    if($attendee->guests > 0){
+                        $total_guests += $attendee->guests;
+                    }
+                    else{
+                        $total_guests++;
+                        if($attendee->plusone) $total_guests++;
+                    }
                 }
             }
         }

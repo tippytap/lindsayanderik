@@ -22,15 +22,31 @@
                 <form action='{{ url("/invitee/$wedding->id/$invitee->id") }}' class="form-horizontal" method="POST">
                         {{ csrf_field() }}
                         <div class="row">
+                            <div class="col-xs-12 guest-heading">
+                                <h3><small>Name(s)</small></h3>
+                            </div>
                             <div class="col-md-6">
                                 <label for="firstname" class="control-label">First name</label>
-                                <input class="form-control" type="text" name="firstname" id="firstname" value='{{"$invitee->firstname"}}'>
+                                <input class="form-control" type="text" name="firstname" id="firstname" value="{{ $invitee->firstname }}">
                             </div>
                             <div class="col-md-6">
                                 <label for="lastname" class="control-label">Last name</label>
-                                <input class="form-control" type="text" name="lastname" id="lastname" value='{{"$invitee->lastname"}}'>
+                                <input class="form-control" type="text" name="lastname" id="lastname" value="{{ $invitee->lastname}}">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname-2" class="control-label">First name</label>
+                                <input class="form-control" type="text" name="firstname-2" id="firstname-2" value="{{ ($guest2 != '') ? $guest2[0] : '' }}">
                             </div>
                             <div class="col-md-6">
+                                <label for="lastname-2" class="control-label">Last name</label>
+                                <input class="form-control" type="text" name="lastname-2" id="lastname-2" value="{{ ($guest2 != '') ? $guest2[1] : '' }}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
                                 @if($invitee->attending)
                                     <br>
                                     <strong>Attending?</strong>
@@ -47,6 +63,10 @@
                                         </label>
                                     </div>
                                 @endif
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
                                 @if(!$invitee->attending)
                                     <br>
                                     <strong>Attending?</strong>
@@ -64,21 +84,20 @@
                                     </div>
                                 @endif
                             </div>
-                            <div class="col-md-3">
-                                <br/>
-                                <lable for="plusone" class="control-label">Plus one name:</lable>
-                                <input class="form-control" type="text" placeholder="Jane Doe" name="plusone" id="plusone" value='{{ "$invitee->plusone" }}'>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
                                 <div class="form-group col-xs-12">
                                     <br>
                                     <label for="numguests">
-                                        How many kids?
+                                        Total number attending in party
                                         <input class="form-control" name="numguests" id="numguests" value='{{ ($invitee->guests) ? $invitee->guests : 0 }}' type="number"/>
                                     </label>
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <div class="checkbox">
                                         <label>
-                                            <input class="" type="checkbox" name="shuttle" id="shuttle" {{ ($invitee->shuttle) ? 'checked' : '' }}> <strong>My party will use the shuttle</strong>
+                                            <input class="" type="checkbox" name="shuttle" id="shuttle" {{ ($invitee->shuttle) ? 'checked' : '' }}> <strong>Party will use the shuttle</strong>
                                         </label>
                                     </div>
                                 </div>

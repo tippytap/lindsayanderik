@@ -21,9 +21,11 @@ class InviteeController extends Controller
     public function edit($wedding, $invitee){
         $wedding = Wedding::where("id", $wedding)->first();
         $invitee = Invitee::where("id", $invitee)->first();
+        $guest2 = ($invitee->plusone) ? explode(' ',$invitee->plusone) : '';
         return view('invite.edit', [
             'wedding' => $wedding,
-            'invitee' => $invitee
+            'invitee' => $invitee,
+            'guest2' => $guest2
         ]);
     }
 
@@ -44,12 +46,47 @@ class InviteeController extends Controller
         $invitee->guests = $request->input('numguests');
 
         if($invitee->attending){
-            $invitee->plusone = ($request->input('plusone')) ? $request->input('plusone') : null;
+            if($request->input('firstname-2') && $request->input('lastname-2')){
+                $invitee->plusone = $request->input('firstname-2') . " " . $request->input('lastname-2');
+            }
             $invitee->shuttle = ($request->input('shuttle')) ? true : false;
         }
         
         if(!$invitee->attending && $invitee->plusone)
             $invitee->plusone = null;
+
+        $numguests = $request->input('numguests');
+
+        // if numguests not filled out:
+            // if attending and filled out second guest, it's 2
+            // if attending and haven't filled out second guest, it's 1 
+        if($numguests > 0){
+            $invitee->guests = $numguests;
+
+            if(($request->input('firstname-2') && $request->input('lastname-2')) && $numguests < 2){
+                $invitee->guests = 2;
+            }
+        }
+        else{
+            if($request->input('attending') == 'yes' 
+                && ($request->input('firstname-2') && $request->input('lastname-2'))
+            ){
+                $invitee->guests = 2;
+            }
+            else{
+                if($request->input('attending') == 'yes'
+                    && !($request->input('firstname-2') && $request->input('lastname-2'))
+                ){
+                    $invitee->guests = 1;
+                }
+            }
+        }
+
+        if(!$invitee->attending && $invitee->guests > 0)
+            $invitee->guests = 0;
+
+        if(!$invitee->attending && $invitee->shuttle)
+            $invitee->shuttle = false;
 
         $invitee->save();
 
@@ -81,6 +118,27 @@ class InviteeController extends Controller
                     $invitee->plusone = $request->input('firstname-2') . " " . $request->input('lastname-2');
                 }
                 $invitee->shuttle = ($request->input('shuttle')) ? true : false;
+            }
+
+            // if numguests not filled out:
+                // if attending and filled out second guest, it's 2
+                // if attending and haven't filled out second guest, it's 1 
+            if($request->input('numguests') > 0){
+                $invitee->guests = $request->input('numguests');
+            }
+            else{
+                if($request->input('attending') == 'yes' 
+                    && ($request->input('firstname-2') && $request->input('lastname-2'))
+                ){
+                    $invitee->guests = 2;
+                }
+                else{
+                    if($request->input('attending') == 'yes'
+                        && !($request->input('firstname-2') && $request->input('lastname-2'))
+                    ){
+                        $invitee->guests = 1;
+                    }
+                }
             }
             
             if(!$invitee->attending && $invitee->plusone)
