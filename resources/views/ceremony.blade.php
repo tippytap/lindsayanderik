@@ -112,7 +112,7 @@
                                                 <p class="text-center">
                                                     <span class="name">Bethel Tan</span>
                                                     <br>
-                                                    <span class="title"><strong>Maid of honor</strong></span>
+                                                    <span class="title"><strong>Matron of honor</strong></span>
                                                     <span class="description w-50 center-block">I met Bethel my senior year of college through church and a dance team, which led us to many shared performances, including in a DC subway! We have been good friends ever since and I was the maid of honor in her wedding to Brian in 2008.</span>
                                                 </p>
                                             </li>
