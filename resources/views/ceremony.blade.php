@@ -265,7 +265,7 @@
             </div>
 
             <div class="content">
-                <h4 class="text-center">Sundara</h4>
+                <h4 class="text-center" style="font-size: 2em; color: white; font-family: 'Rubik', sans-serif;">Sundara</h4>
                 <br>
                 <div class="row">
                     <div class="w-50 pull-left">
@@ -303,7 +303,6 @@
 
             $(".img-constrain").each(function(){
                 var src = $(this).find("img").attr('src');
-                console.log($(this));
                 $(this).css({
                     "background": "url(" + src + ") no-repeat center center"
                 });

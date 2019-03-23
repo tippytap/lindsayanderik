@@ -178,7 +178,6 @@
             $(document).ready(function(){
                 $(".img-constrain").each(function(){
                     var src = $(this).find("img").attr('src');
-                    console.log($(this));
                     $(this).css({
                         "background": "url(" + src + ") no-repeat center center"
                     });
