@@ -86,6 +86,8 @@
                                     <label>
                                         <input class="" type="checkbox" name="shuttle" id="shuttle"><strong>My party will use the shuttle that will be available at the Hilton Garden Inn to travel to and from the wedding location.</strong>
                                     </label>
+                                    <br>
+                                    <a href="{{ url('/travel#travel') }}">Learn more about the shuttle</a>
                                 </div>
                             </div>
                         </div>

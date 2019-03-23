@@ -25,3 +25,11 @@ Route::get('/invite/{wedding}', 'InviteeController@invite');
 Route::post('/create/{wedding}', 'InviteeController@create')->name('createInvite');
 Route::get('/invitee/{wedding}/{id}', 'InviteeController@edit')->name('editInvitee');
 Route::post('/invitee/{weddint}/{id}', 'InviteeController@update');
+
+Route::get('/story', function(){ return view('story'); });
+
+Route::get('/registry', function(){ return view('registry'); });
+
+Route::get('/travel', function() { return view('travel'); });
+
+Route::get('/ceremony', function() { return view('ceremony'); });

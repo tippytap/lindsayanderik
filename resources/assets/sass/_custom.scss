@@ -101,6 +101,13 @@ body{
     }
 }
 
+.w-75{
+    width: 100%;
+    @media screen and (min-width: 992px){
+        width: 75%;
+    }
+}
+
 .w-100{
     width: 100%;
 }
@@ -192,7 +199,7 @@ body{
         background: white;
         opacity: 1;
         padding: 10px;
-        text-align: center;
+        // text-align: center;
         border: 1px solid $navy;
         font-family: "Rubik", sans-serif;
         @media screen and (min-width: 768px){
@@ -417,7 +424,6 @@ $sun-width: 80vh;
     }
 }
 
-
 .paralaxThis{
     position: absolute;
     // box-shadow: 0 12px 24px rgba(0,0,0,.2);
@@ -480,10 +486,16 @@ $sun-width: 80vh;
         // width: 25%;
         display: flex;
         align-items: stretch;
+        flex-direction: column;
+        padding-top: 1em;
 
         @media screen and (max-width: 991px){
             width: 100%;
             display: block;
+        }
+
+        small{
+            display: inline;
         }
     }
 }
@@ -518,5 +530,59 @@ $sun-width: 80vh;
         top: 5em;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+.travel{
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+.img-constrain{
+    height: 0;
+    background-size: cover;
+    padding-bottom: 100%;
+    background-position-x: 50%!important;
+    &.sixteen-nine{
+        padding-bottom: 56.29%;
+    }
+    &.one-one{
+        padding-bottom: 50%;
+        @media screen and (max-width: 991px){
+            padding-bottom: 100%;
+        }
+    }
+    &.pos-y-minus-50{
+        background-position-y: -50px!important;
+    }
+    &.pos-y-minus-100{
+        background-position-y: -100px!important;
+    }
+    &.pos-y-minus-150{
+        background-position-y: -150px!important;
+    }
+    img{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        z-index: 0;
+    }
+}
+
+#shuttle{
+    font-size: 1em;
+}
+
+.party-list{
+    .name{
+        font-size: 2em;
+    }
+    .description{
+        display: block;
     }
 }

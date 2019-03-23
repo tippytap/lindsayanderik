@@ -8,3 +8,24 @@
 .push-right{
     padding-left: 2em;
 }
+
+.blue-bg{
+    background: #143b4c!important;
+    nav a{
+        color: white!important;
+        border-color: white!important;
+    }
+}
+
+.reset-list{
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: 991px){
+        padding: 1em;
+    }
+    
+    li{
+        list-style: none;
+    }
+}

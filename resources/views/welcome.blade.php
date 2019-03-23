@@ -26,16 +26,19 @@
             <nav class="topnav">
                 <ul>
                     <li>
-                        <a href="#rsvp">RSVP</a>
+                        <a href="{{ url('/#rsvp') }}">RSVP</a>
                     </li>
                     <li>
-                        <a href="#travel">Hotel</a>
+                        <a href="{{ url('/travel') }}">Travel</a>
                     </li>
                     <li>
-                        <a href="#registry">Registry</a>
+                        <a href="{{ url('/registry') }}">Registry</a>
                     </li>
                     <li>
-                        <a href="#">Story</a>
+                        <a href="{{ url('/ceremony') }}">Ceremony</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/story') }}">Story</a>
                     </li>
                 </ul>
             </nav>
@@ -59,9 +62,9 @@
             <div id="rsvp" class="content ">
                 <div class="card-container left w-50">
                     <div class="card layer-up col-md-12">
-                        <div class="card-content">
+                        <div class="card-content text-center">
                             <h3>Join Us!</h3>
-                            <p><strong>5:00pm</strong><br/>Sundara, Boones Mill, Virginia<br/><strong>June 1, 2019</strong></p>
+                            <p><strong>5:00pm</strong><br><strong>June 1, 2019</strong><br/>Sundara, Boones Mill, Virginia<br/></p>
                             <p>Come celebrate our marriage with us!</p>
                             <a class="btn btn-primary" href='{{ url("/invite/1") }}'>RSVP Here</a>
                             <div style="margin-top: 10px;">or email us at <a href="mailto:lindskey@gmail.com">lindskey@gmail.com</a></div>
@@ -75,7 +78,9 @@
                 </div>
             </div>
 
-            <div id="travel" class="content">
+            <div class="content"></div>
+
+            {{-- <div id="travel" class="content">
                 <div class="photo-container paralaxThis left">
                     <div class="photo">
                         <img src="images/hiltongardeninn.jpg" alt="outdoor view of the Hilton Garden Inn">
@@ -110,37 +115,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
-            <div id="registry" class="content">
-                <div class="card-container row center">
-                    <div class="card layer-up w-100">
-                        <div class="card-content">
-                            <h3>Registeries</h3>
-                            <br>
-                            <div class="registry">
-                                <div class="registry-block">
-                                    <a href="https://www.amazon.com/wedding/share/lindsayanderik" class="registry-link" aria-label="Amazon registry link">
-                                        <span class="fab fa-amazon"></span>
-                                    </a>
-                                </div>
-                                <div class="registry-block">
-                                    <a id="honeyfund" href="https://www.honeyfund.com/wedding/TheMill-KeyWay" class="registry-link" aria-label="Honeyfund registry link">
-                                        <img src="images/honeyfund.svg" class="show" alt="honeyfund logo">
-                                        <img src="images/honeyfund-white.svg" class="hide" alt="honeyfund logo">
-                                    </a>
-                                </div>
-                                <div class="registry-block">
-                                    <a id="wayfair" href="https://www.wayfair.com/registry/wedding/LindsayAndErikWedding" class="registry-link" aria-label="Honeyfund registry link">
-                                        <img src="images/wayfair.svg" class="show" alt="wayfair logo">
-                                        <img src="images/wayfair-white.svg" class="hide" alt="wayfair logo">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
@@ -148,7 +124,6 @@
             $('.alert').each(function(){
                 var $this = $(this);
                 setTimeout(function(){
-                    console.log('boopydoopydoo');
                     $this.fadeOut('slow');
                 }, 5000);
             })

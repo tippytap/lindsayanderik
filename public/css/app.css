@@ -8603,6 +8603,30 @@ object {
   padding-left: 2em;
 }
 
+.blue-bg {
+  background: #143b4c !important;
+}
+
+.blue-bg nav a {
+  color: white !important;
+  border-color: white !important;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .reset-list {
+    padding: 1em;
+  }
+}
+
+.reset-list li {
+  list-style: none;
+}
+
 /**
 *   Grid
 *   --------------------- column options
@@ -8816,6 +8840,16 @@ body {
   }
 }
 
+.w-75 {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .w-75 {
+    width: 75%;
+  }
+}
+
 .w-100 {
   width: 100%;
 }
@@ -8922,7 +8956,6 @@ body {
   background: white;
   opacity: 1;
   padding: 10px;
-  text-align: center;
   border: 1px solid #143b4c;
   font-family: "Rubik", sans-serif;
 }
@@ -9246,6 +9279,11 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1em;
 }
 
 @media screen and (max-width: 991px) {
@@ -9253,6 +9291,10 @@ body {
     width: 100%;
     display: block;
   }
+}
+
+.registry .registry-block small {
+  display: inline;
 }
 
 .registry-link {
@@ -9286,4 +9328,65 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.travel ul {
+  padding: 0;
+  margin: 0;
+}
+
+.travel li {
+  list-style: none;
+}
+
+.img-constrain {
+  height: 0;
+  background-size: cover;
+  padding-bottom: 100%;
+  background-position-x: 50% !important;
+}
+
+.img-constrain.sixteen-nine {
+  padding-bottom: 56.29%;
+}
+
+.img-constrain.one-one {
+  padding-bottom: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .img-constrain.one-one {
+    padding-bottom: 100%;
+  }
+}
+
+.img-constrain.pos-y-minus-50 {
+  background-position-y: -50px !important;
+}
+
+.img-constrain.pos-y-minus-100 {
+  background-position-y: -100px !important;
+}
+
+.img-constrain.pos-y-minus-150 {
+  background-position-y: -150px !important;
+}
+
+.img-constrain img {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  z-index: 0;
+}
+
+#shuttle {
+  font-size: 1em;
+}
+
+.party-list .name {
+  font-size: 2em;
+}
+
+.party-list .description {
+  display: block;
 }
