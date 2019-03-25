@@ -9341,9 +9341,15 @@ body {
 
 .img-constrain {
   height: 0;
-  background-size: cover;
+  background-size: cover !important;
   padding-bottom: 100%;
   background-position-x: 50% !important;
+}
+
+@media screen and (max-width: 991px) {
+  .img-constrain {
+    margin: 1em 0;
+  }
 }
 
 .img-constrain.sixteen-nine {

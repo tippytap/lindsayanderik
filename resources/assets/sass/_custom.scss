@@ -545,9 +545,14 @@ $sun-width: 80vh;
 
 .img-constrain{
     height: 0;
-    background-size: cover;
+    background-size: cover!important;
     padding-bottom: 100%;
     background-position-x: 50%!important;
+
+    @media screen and (max-width: 991px){
+        margin: 1em 0;
+    }
+
     &.sixteen-nine{
         padding-bottom: 56.29%;
     }

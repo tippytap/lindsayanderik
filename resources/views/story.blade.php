@@ -179,7 +179,7 @@
                 $(".img-constrain").each(function(){
                     var src = $(this).find("img").attr('src');
                     $(this).css({
-                        "background": "url(" + src + ") no-repeat center center"
+                        "background": "url(" + src + ") no-repeat"
                     });
                 });
             });
