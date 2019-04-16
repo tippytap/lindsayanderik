@@ -87,7 +87,7 @@
 
                                     <h5 id="shuttle"><strong>Shuttle</strong></h5>
                                     <p class="text-left">
-                                        There will also be a shuttle available from the hotel to Sundara which is approximately 15 minutes (10 miles) away. The shuttle will transport guests to the ceremony and return to the hotel after the reception. When RSVPing, please be sure to let us know if you plan to use the shuttle.
+                                        There will also be a shuttle available for guests of the hotel to Sundara which is approximately 15 minutes (10 miles) away. The shuttle will transport guests to the ceremony and return to the hotel after the reception. When RSVPing, please be sure to let us know if you plan to use the shuttle.
                                     </p>
                                 </div>
                             </div>
